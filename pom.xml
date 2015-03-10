@@ -3,7 +3,7 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.hello</groupId>
-    <artifactId>gs-maven-android</artifactId>
+    <artifactId>Sample-maven-android</artifactId>
     <version>0.1.0</version>
     <packaging>apk</packaging>
 
@@ -32,11 +32,27 @@
             <plugin>
                 <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                 <artifactId>android-maven-plugin</artifactId>
+			
                 <version>4.0.0-rc.2</version>
+				 <executions>
+                <execution>
+                    <id>lint</id>
+                    <goals>
+                        <goal>lint</goal>
+                    </goals>
+                    <phase>install</phase>
+                </execution>
+            </executions>
+
                 <configuration>
                     <sdk>
                         <platform>21</platform>
                     </sdk>
+					<lint>
+                    <skip>false</skip>
+                    <failOnError>false</failOnError>
+                </lint> 
+
                     <deleteConflictingFiles>true</deleteConflictingFiles>
                     <undeployBeforeDeploy>true</undeployBeforeDeploy>
                 </configuration>
@@ -49,7 +65,11 @@
                     <source>1.6</source>
                     <target>1.6</target>
                 </configuration>
-            </plugin>
+            </plugin>			
+			<plugin>
+			<artifactId>sonar-maven3-plugin</artifactId>
+			<version>5.1-RC1</version>
+			</plugin>
         </plugins>
     </build>
 
