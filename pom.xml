@@ -6,6 +6,8 @@
     <artifactId>Sample-maven-android</artifactId>
     <version>0.2.${bambooBuildNumber}</version>
     <packaging>apk</packaging>
+    
+    
 
     <properties>
         <!-- use UTF-8 for everything -->
