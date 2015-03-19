@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.hello</groupId>
     <artifactId>Sample-maven-android</artifactId>
-    <version>0.2.${bambooBuildnumber}</version>
+    <version>0.2.${bambooBuildNumber}</version>
     <packaging>apk</packaging>
 
     <properties>
