@@ -34,7 +34,7 @@
                 <artifactId>android-maven-plugin</artifactId>
 			
                 <version>4.0.0-rc.2</version>
-				 <executions>
+		<executions>
                 <execution>
                     <id>lint</id>
                     <goals>
