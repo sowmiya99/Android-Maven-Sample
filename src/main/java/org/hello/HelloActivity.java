@@ -19,7 +19,7 @@ public class HelloActivity extends Activity {
         super.onStart();
         LocalTime currentTime = new LocalTime();
         TextView textView = (TextView) findViewById(R.id.text_view);
-		textView.setText(" Let me try ! :)Yuuuuupsfllsasieeeeee!Wellllcome to Android Appppplicatttion !!! ");
+		textView.setText(" Let me try ! :)Yuuuureetertupsfllsasieeeeee!Wellllcome to Android Appppplicatttion !!! ");
         textView.setText("The current local timmme isss: " + currentTime);
     }
 
