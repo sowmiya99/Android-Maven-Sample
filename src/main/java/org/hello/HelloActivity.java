@@ -20,7 +20,7 @@ public class HelloActivity extends Activity {
         LocalTime currentTime = new LocalTime();
         TextView textView = (TextView) findViewById(R.id.text_view);
 		textView.setText(" Let me try ! :)Yuuuuuuuuuuuupsfllsasieeeeee!Wellllcome to Android Appppplicatttion !!! ");
-        textView.setText("The current local timmme is: " + currentTime);
+        textView.setText("The current local timmme isss: " + currentTime);
     }
 
 }
